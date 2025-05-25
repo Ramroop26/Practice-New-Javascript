@@ -99,12 +99,15 @@
 //     let Image = document.querySelector("#imagg")
 //     Image.src="https://tse3.mm.bing.net/th?id=OIP.U_VJuupQohwnzXcKMztqWgHaEo&pid=Api&P=0&h=180"
 // }
-// //--------------------------------------------------------------------------- hide text-----------------------------------------------//
+// // //--------------------------------------------------------------------------- hide text-----------------------------------------------//
 let hide=()=> {
     let hide = document.querySelector("#text")
     if( hide.style.display == "none"){
         hide.style.display = "block";
         hide.style.color = "green";
+        let btn3 = document.querySelector(".btn1")
+         btn3.innerHTML="Show"
+         btn3.style.backgroundColor="yellow"
     }
     else{
         hide.style.display = "none";
