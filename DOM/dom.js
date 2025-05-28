@@ -100,20 +100,20 @@
 //     Image.src="https://tse3.mm.bing.net/th?id=OIP.U_VJuupQohwnzXcKMztqWgHaEo&pid=Api&P=0&h=180"
 // }
 // // //--------------------------------------------------------------------------- hide text-----------------------------------------------//
-let hide=()=> {
-    let hide = document.querySelector("#text")
-    if( hide.style.display == "none"){
-        hide.style.display = "block";
-        hide.style.color = "green";
-        let btn3 = document.querySelector(".btn1")
-         btn3.innerHTML="Show"
-         btn3.style.backgroundColor="yellow"
-    }
-    else{
-        hide.style.display = "none";
+// let hide=()=> {
+//     let hide = document.querySelector("#text")
+//     if( hide.style.display == "none"){
+//         hide.style.display = "block";
+//         hide.style.color = "green";
+//         let btn3 = document.querySelector(".btn1")
+//          btn3.innerHTML="Show"
+//          btn3.style.backgroundColor="yellow"
+//     }
+//     else{
+//         hide.style.display = "none";
 
-    }
-}
+//     }
+//}
 
 /* The code you provided is defining three functions: */
 // let  hide = ()=>{
@@ -130,3 +130,34 @@ let hide=()=> {
 //     let show  = document.querySelector("#text")
 //     show.style.fontSize = "";
 // }
+
+//---------------------------------------------------------------------Incand Dec couter---------------------------------------------//
+ let counter = 0;
+
+
+ let Inc=()=>{
+   let count=  document.querySelector("#count");
+   counter++;
+   count.innerHTML = counter;
+   count.style.color = "red"
+ }
+
+ let Dec=()=>{
+ let count=  document.querySelector("#count");
+ count.innerHTML = counter;
+ if(counter>0){
+counter--;
+ }
+
+    
+    
+ }
+
+ let change1=()=>{
+    let change = document.querySelector("#box")
+    change.style.backgroundColor = "blue"
+ }
+  let change2=()=>{
+    let change = document.querySelector("#box")
+    change.style.backgroundColor = ""
+ }

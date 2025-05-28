@@ -14,6 +14,14 @@
      <button onclick="gr()">GREEN</button>
      <button onclick="ye()">YELLOW</button>
      <h1 id="text">Hello world</h1> -->
+
+     <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            background-color: red;
+        }
+     </style>
      
 </head>
 <body>
@@ -35,11 +43,19 @@
          <button onclick="show()" >Show</button>  
     <button onclick="reset()" >reset</button>  -->
 <!-- ----------------------------------------------------------------------------Hide change name show------------------------- -->
-  <p id="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus qui nulla quo, minus voluptate ad corrupti,
+  <!-- <p id="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus qui nulla quo, minus voluptate ad corrupti,
         cupiditate mollitia sapiente recusandae facere amet possimus quia vel fuga maiores nisi illum est?</p>
     
-  <button onclick="hide()" class="btn1" >Hide</button> 
- 
+  <button onclick="hide()" class="btn1" >Hide</button>  -->
+ <!-- ---------------------------------------------------Increase and decreasecounter ------------------------------------- -->
+  <h1 id="count"></h1>
+  <!-- <button onclick="Inc()">Inc</button> -->
+  <!-- <button onclick="Inc()">Inc</button> -->
+  <button onmousedown="Inc()">Inc</button>
+  <!-- <button onmouseenter="Inc()">Inc</button>  -->
+  <button onmouseenter="Dec()">Dec</button>
+
+  <div id="box" onmouseenter="change1()" onmouseleave="change2()"></div>
 
 
     <script src="dom.js"></script>

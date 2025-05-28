@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table  align="center" cellpadding="30px" cellspacing="15px"  border="4px" style="margin-top: 4%;" class="container">
+
+        <tr>
+            <th colspan="4"  id="display">0</th>
+        </tr>
+
+        <tr>
+            <th onclick="press('1')">1</th>
+            <th onclick="press('2')">2</th>
+            <th onclick="press('3')">3</th>
+            <th onclick="press('4')">4</th>
+        </tr>
+
+        <tr>
+            <th onclick="press('5')">5</th>
+            <th onclick="press('6')">6</th>
+            <th onclick="press('7')">7</th>
+            <th onclick="press('8')">8</th>
+        </tr>
+
+        <tr>
+            <th onclick="press('9')">9</th>
+            <th onclick="press('0')">0</th>
+            <th onclick="press('00')">00</th>
+            <th onclick="press('.')">.</th>
+        </tr>
+
+        <tr>
+            <th onclick="press('-')">-</th>
+            <th onclick="press('*')">*</th>
+            <th onclick="press('/')">/</th>
+            <th rowspan="2" onclick="press('+')" class="in">+</th>
+        </tr>
+
+        <tr>
+            <th onclick="cl()" class="Ac">AC</th>
+            <th onclick="del()" class="de">DEL</th>
+            <th onclick="res()" class="eq">=</th>
+        </tr>
+    </table>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
